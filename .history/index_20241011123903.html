@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endivina el número</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Busca un número</h2>
+        <div>
+        <label for="max">Màxim:</label>
+        <input type="number" id="max" value="20">
+        <button onclick="setRange()">Estableix rang</button>
+    </div>
+        <button onclick="resetGame()" id="reset">Reinicia!</button>
+    </header>
+    <main id="main">
+        <h1>Busca el número</h1> <br>
+        <div id="display-num">?</div> <br>
+        <h3 id="display-result">Comencem la partida...</h3>
+    </main>
+    <footer>
+        <input type="number" value="0" id="num">
+        <button onclick="playGame()" id="play">Prova!</button>
+        <div id="display-jugades">💯 Jugades: </div>
+        <div id="display-puntuacio">🥇 Millor puntuació: </div>
+    </footer>
+</body>
+</html>

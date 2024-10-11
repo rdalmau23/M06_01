@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: brown;
+    display: flex;
+    margin-right: 20px;
+}

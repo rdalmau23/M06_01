@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: brown;
+    display: flex;
+    gap: 20px;
+    height: 20%;
+}
+main{
+    background-color: rgb(61, 61, 61);
+    height: 50%;
+}
