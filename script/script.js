@@ -9,13 +9,14 @@ function setRange() {
         alert("El valor màxim ha de ser major que 1."); // marquem que no podem posa de màxim 0 ni negatius
         return;
     }
-    numero1 = Math.floor(Math.random() * max) + 1;
+    numero1 = Math.floor(Math.random() * max) + 1; //aqí genera aleatoriament un numero i max represent EL RANG
     intents = 0;
     document.getElementById("display-num").innerHTML = "?";
     document.getElementById("display-result").innerHTML = "Comencem la partida...";
     document.getElementById("main").style.backgroundColor = "";
     document.getElementById("display-jugades").innerHTML = `💯 Intents: 0`;
     document.getElementById("display-puntuacio").innerHTML = "🥇 Millor puntuació: "; 
+    console.log(max)
 }
 
 function playGame() { //funció per jugar 
@@ -47,6 +48,7 @@ function playGame() { //funció per jugar
     document.getElementById("display-jugades").innerHTML = `💯 Intents: ${intents}`; // mo0strem els intents que portem
     document.getElementById("display-result").innerHTML = `${sortida}`;
     document.getElementById("num").select();
+    console.log(numero1);
 }
 
 function resetGame() {
